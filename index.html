@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tip-Calc: A Simple Online Tip Calculator</title>
+    <!-- Bootstrap CDN. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Custom CSS file. -->
+    <link href="main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="wrapper">
+            <div class="col-12" id="calc-body">
+                <h1>TIP-CALC</h1>
+                <input id="check" type="text" placeholder="Enter bill amount">
+            </div>
+            <div class="col-12" id="how-btn">
+                <a href="#" id="how-btn">How much to tip?</a>
+            </div>
+            <div class="col-12" id="percentage-col">
+                <button class="btn tip-btn" value=".01">1%</button>
+                <button class="btn tip-btn" value=".05">5%</button>
+                <button class="btn tip-btn" value=".10">10%</button>
+                <button class="btn tip-btn" value=".15">15%</button>
+                <button class="btn tip-btn" value=".20">20%</button>
+                <button class="btn tip-btn" value=".25">25%</button>
+            </div>
+            <div class="col-12" id="custom-col">
+                <button class="btn" id="round-btn">Round Base</button>
+                <input class="align-middle" placeholder="Custom %" type="number" min="1" max="100" id="custom-perc">
+            </div>
+            <div class="col-12" id="split-col">
+                <input class="align-middle" value="2" type="number" min="2" max="10" id="split-input">
+                <button class="btn" id="split-btn">Split</button>
+                <button class="btn" id="clear-btn">C</button>
+            </div>
+            <div class="col-12">
+                <h2 id="bill">Bill: $0.00</h2>
+                <h2 id="tip">Tip: $0.00</h2>
+                <h2 id="total">Total: $0.00</h2>
+                <h2 id="split"></h2>
+            </div>
+        </div>
+
+        <div class="modal" id="tip-advice-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tipping Guide</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Why Tipping Matters: </strong>There are no written rules for giving gratuities, but
+                            it's expected at places where service workers are paid only minimum wage or commissions. You
+                            are not legally required to leave a tip, however, you’re being very unfair to your server if
+                            you choose to be a cheapskate. Many servers completely rely on tips to survive. Keep that in
+                            mind before you bail on a good waitress/waiter.<br><br><strong>U.S. Standard: </strong>In
+                            2019, the minimum amount to tip is widely understood to be between 15 and 20 percent.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

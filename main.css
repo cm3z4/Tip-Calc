@@ -1,0 +1,62 @@
+body {
+    height: 100%;
+    background-color: #e0d7d3;
+}
+
+#wrapper {
+    text-align: center;
+    border-top: 10px solid #626670;
+}
+
+#calc-body {
+    background-color: 	#bec6c3;
+    padding: 2% 0 2% 0;
+    margin-bottom: 16px;
+}
+
+#how-btn {
+    margin-bottom: 16px;
+}
+
+#check {
+    text-align: center;
+}
+
+#custom-perc {
+    text-align: center;
+    width: 112px;
+}
+
+#split-input {
+    text-align: center;
+    width: 72px;
+}
+
+#percentage-col, #custom-col, #split-col {
+    margin-bottom: 2%;
+}
+
+#clear-btn {
+    background-color: #CD8959;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.tip-btn, #round-btn, #split-btn {
+    background-color: #626670;
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+.tip-btn:hover, #round-btn:hover, #split-btn:hover {
+    color: black;
+}
+
+.modal-header, .modal-footer {
+    background-color: #bec6c3;
+}
+
+.modal-body {
+    background-color: #e0d7d3;
+}
