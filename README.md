@@ -4,7 +4,7 @@
 
 Tip-Calc is a simple and responsive online tip calculator.
 
-You can find it here: https://tip-calc.com
+You can find it here: https://cm3z4.github.io/Tip-Calc/
 
 ### Screenshots
 
